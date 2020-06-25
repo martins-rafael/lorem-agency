@@ -105,3 +105,73 @@ header, .navbar {
 .carousel-indicators .active {
     background-color: #65daf9;
 }
+
+/* ============
+==== sobre ==== 
+============ */
+
+#about-area {
+    background-color: #f9f9f9;
+}
+
+.main-title {
+    margin-bottom: 65px;
+    font-size: 40px;
+    text-align: center;
+    color: #444;
+}
+
+.main-title::after {
+    content: '';
+    position: absolute;
+    top: 60px;
+    left: 42.5%;
+    width: 15%;
+    border-top: 2px solid #444;
+}
+
+.about-title {
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #444;
+}
+
+#about-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+#about-list li {
+    line-height: 30px;
+}
+
+#about-list i {
+    margin-right: 16px;
+    color: #65daf9;
+}
+
+/* ===============
+==== serviços ==== 
+=============== */
+
+.service-box {
+    margin-bottom: 56px;
+    text-align: center;
+}
+
+.service-box i ,
+.service-box h4 {
+    margin-bottom: 24px;
+    transition: .5s
+}
+
+.service-box i {
+    font-size: 36px;
+    color: #444;
+}
+
+.service-box:hover > i,
+.service-box:hover > h4 {
+    color: #65daf9;
+}
