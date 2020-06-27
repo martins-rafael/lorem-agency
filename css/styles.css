@@ -195,3 +195,11 @@ header, .navbar {
     font-size: 26px;
     color: #f5f5f5;
 }
+
+/* =============
+==== equipe ==== 
+============= */
+
+.card-body {
+    text-align: center;
+}
