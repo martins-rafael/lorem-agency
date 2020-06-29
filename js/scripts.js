@@ -80,11 +80,45 @@ $(document).ready(function () {
 
             stop = 1;
         }
-    })
+    });
+
+    // Parallax
+    setTimeout(function () {
+        $('#data-area').parallax({ imageSrc: 'img/cidadeparallax.png' });
+        $('#apply-area').parallax({ imageSrc: 'img/pattern.png' });
+    }, 250)
+
+    // Portfolio filter
+    $('.filter-btn').on('click', function () {
+        let type = $(this).attr('id');
+        let boxes = $('.project-box');
+
+        $('.main-btn').removeClass('active');
+        $(this).addClass('active')
+
+        if (type == 'dev-btn') {
+            eachBoxs('dev', boxes);
+        } else if (type == 'dsg-btn') {
+            eachBoxs('dsg', boxes);
+        } else if (type == 'seo-btn') {
+            eachBoxs('seo', boxes);
+        } else {
+            eachBoxs('all', boxes);
+        }
+    });
+
+    function eachBoxs(type, boxes) {
+        if (type == 'all') {
+            $(boxes).fadeIn();
+        } else {
+            $(boxes).each(function () {
+                if (!$(this).hasClass(type)) {
+                    $(this).fadeOut('slow');
+                } else {
+                    $(this).fadeIn();
+                }
+            })
+        }
+    }
 });
 
-// Parallax
-setTimeout(function () {
-    $('#data-area').parallax({ imageSrc: 'img/cidadeparallax.png' });
-    $('#apply-area').parallax({ imageSrc: 'img/pattern.png' });
-}, 250)
