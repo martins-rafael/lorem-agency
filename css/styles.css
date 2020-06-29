@@ -289,3 +289,83 @@ header, .navbar {
     background-color: #65daf9;
     border-color: #65daf9;
 }
+
+/* =================
+==== newsletter ==== 
+================= */
+
+#news-area {
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+#news-area p {
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+#email-input {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 40%;
+    height: 40px;
+    border: 2px solid #65daf9;
+    border-radius: 20px 0 0 20px;
+}
+
+#news-btn {
+    position: absolute;
+    margin-left: -130px;
+    padding: 0 30px;
+    height: 40px;
+    text-transform: uppercase;
+    background-color: #65daf9;
+    color:#f5f5f5;
+    border: 2px solid #65daf9;
+    border-radius: 0 20px 20px 0;
+    transition: .5s;
+}
+
+#news-btn:hover {
+    color: #65daf9;
+    background-color: #f5f5f5;
+}
+
+/* ==========
+==== CTA ==== 
+========== */
+
+#call-area {
+    text-transform: uppercase;
+    background-color: #65daf9;
+}
+
+#call-area .container {
+    padding: 40px 100px;
+}
+
+#call-area .row {
+    display: block;
+    text-align: center;
+}
+
+#call-area p {
+    display: inline-block;
+    margin-bottom: 0;
+    height: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #f5f5f5;
+}
+
+#call-area #call-btn {
+    display: inline-block;
+    margin-left: 30px;
+    width: auto;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #65daf9;
+    background-color: #f5f5f5;
+}
