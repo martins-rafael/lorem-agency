@@ -282,9 +282,11 @@
                 <div class="container">
                     <div class="col-md-12">
                         <h3 class="main-title">Fique por dentro das novidades</h3>
-                        <p>Assine nossa lista de e-mails, e receba nossos conteúdos sobre desenvolvimento de software</p>
+                        <p>Assine nossa lista de e-mails, e receba nossos conteúdos sobre desenvolvimento de software
+                        </p>
                         <form action="">
-                            <input type="email" class="form-control" name="email" id="email-input" placeholder="Seu melhor email">
+                            <input type="email" class="form-control" name="email" id="email-input"
+                                placeholder="Seu melhor email" required>
                             <input type="submit" id="news-btn" value="Inscrever">
                         </form>
                     </div>
@@ -301,6 +303,51 @@
             </div>
         </div>
     </main>
+    <!-- footer & copy -->
+    <footer>
+        <div id="contact-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="main-title">Entre em contato conosco</h3>
+                    </div>
+                    <div class="col-md-4 contact-box">
+                        <i class="fas fa-phone"></i>
+                        <p><span class="contact-title">Ligue para:</span> (19) 99999-9999</p>
+                        <p><span class="contact-title">Horário:</span> 8:00 - 19:00</p>
+                    </div>
+                    <div class="col-md-4 contact-box">
+                        <i class="fas fa-envelope"></i>
+                        <p><span class="contact-title">Envie um email:</span> contato@loremipsum.com</p>
+                    </div>
+                    <div class="col-md-4 contact-box">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p><span class="contact-title">Venha tomar um café:</span> Rua Lorem Ipsum - 1550</p>
+                    </div>
+                    <div class="col-md-6" id="msg-box">
+                        <p>Ou nos deixe uma mensagem:</p>
+                    </div>
+                    <div class="col-md-6" id="contact-form">
+                        <form action="">
+                            <input type="text" class="form-control" name="email" placeholder="E-mail">
+                            <input type="text" class="form-control" name="subject" placeholder="Assunto">
+                            <textarea rows="4" class="form-control" type="text" name="mesage" placeholder="Sua mensagem..."></textarea>
+                            <input type="submit" class="main-btn" value="Enviar">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="copy-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>Desenvolvido por <a href="#">Lorem Ipsum</a> &copy; 2020</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"
