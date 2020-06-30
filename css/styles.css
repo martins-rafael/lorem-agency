@@ -588,6 +588,9 @@ header, .navbar {
     #company-img {
         display: none;
     }
+    #pattern-img {
+        margin: 0 auto;
+    }
     /* ================
     ==== portfólio ==== 
     ================ */
